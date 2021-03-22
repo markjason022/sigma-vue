@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import Dashboard from './components/Dashboard.vue';
+import Information from './components/Information.vue';
 
 const routes = [
     {
@@ -8,9 +9,9 @@ const routes = [
         component: Dashboard,
     },
     {
-        path: '/empty',
-        name: 'empty',
-        component: () => import('./components/EmptyPage.vue'),
+        path: '/information',
+        name: 'information',
+        component: Information,
     },
 ];
 
