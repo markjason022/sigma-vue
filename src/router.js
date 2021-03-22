@@ -12,11 +12,6 @@ const routes = [
         name: 'empty',
         component: () => import('./components/EmptyPage.vue'),
     },
-    {
-        path: '/documentation',
-        name: 'documentation',
-        component: () => import('./components/Documentation.vue'),
-    },
 ];
 
 const router = createRouter({

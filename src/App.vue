@@ -43,13 +43,11 @@ export default {
             menu : [
                 {label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/'},
 				{
-					label: 'Pages', icon: 'pi pi-fw pi-clone',
+					label: 'Profiles', icon: 'pi pi-fw pi-clone',
 					items: [
-						{label: 'Empty Page', icon: 'pi pi-fw pi-circle-off', to: '/empty'}
+						{label: 'Info', icon: 'pi pi-fw pi-circle-off', to: '/empty'}
 					]
 				},
-                {label: 'Documentation', icon: 'pi pi-fw pi-question', command: () => {window.location = "#/documentation"}},
-                {label: 'View Source', icon: 'pi pi-fw pi-search', command: () => {window.location = "https://github.com/primefaces/sigma-vue"}}
             ]
         }
     },
