@@ -42,5 +42,23 @@
 		"prismjs": "^1.15.0",
 		"vue": "3.0.6",
 		"vue-router": "^4.0.0-0"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+		  "node": true
+		},
+		"extends": [
+		  "plugin:vue/vue3-essential",
+		  "eslint:recommended"
+		],
+		"parserOptions": {
+		  "parser": "babel-eslint"
+		},
+		"rules": {
+		  "no-unused-vars": "off",
+		  "vue/no-unused-components": "off",
+		  "vue/no-setup-props-destructure": "off"
+		}
 	}
 }
