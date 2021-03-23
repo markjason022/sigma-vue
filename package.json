@@ -40,8 +40,9 @@
 		"primeicons": "4.1.0",
 		"primevue": "3.3.4",
 		"prismjs": "^1.15.0",
-		"vue": "3.0.6",
-		"vue-router": "^4.0.0-0",
+		"sweetalert2": "^10.15.6",
+		"vue": "^3.0.7",
+		"vue-router": "^4.0.5",
 		"vuex": "^4.0.0"
 	}
 }

@@ -43,9 +43,9 @@ export default {
             menu : [
                 {label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/'},
 				{
-					label: 'Profiles', icon: 'pi pi-user-plus',
+					label: 'Information', icon: 'pi pi-user-plus',
 					items: [
-						{label: 'Information', icon: 'pi pi-info-circle', to: '/information'}
+						{label: 'Information', icon: 'pi pi-info-circle', to: '/todos'}
 					]
 				},
             ]

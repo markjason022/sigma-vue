@@ -5,7 +5,6 @@ import route from '../library/route'
 
 import { useRouter } from 'vue-router'
 
-import Swal from 'sweetalert2'
 
 const router = useRouter()
 
