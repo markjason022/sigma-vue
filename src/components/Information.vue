@@ -5,6 +5,27 @@
 			<Button label="Delete" icon="pi pi-trash" class="p-button-danger"/>
 		</template>
 	</Toolbar>
+	<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr v-for="(todo, i) in todos" :key="i">
+            <td>{{ todo.id }}</td>
+            <td>{{ todo.name }}</td>
+            <td>{{ todo.description }}</td>
+            <td>
+                <button type="button" class="btn btn-info me-3" @click="showTodo(todo.id)">Edit</button>
+                <button type="button" class="btn btn-danger" @click="deleteTodo(todo.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
 	<Dialog v-model:visible="profileDialog" :style="{width: '450px'}" header="Profile Details" :modal="true" class="p-fluid">
 		<div class="p-field">
 			<label for="name">Name</label>
@@ -34,6 +55,12 @@ export default {
 		
 	},
 
+	computed: {
+		profiles() {
+			return this.$stores.state.todos.todos
+		}
+	},
+
 	methods: {
 		openNew() {
 			this.profileDialog = true;
@@ -42,6 +69,11 @@ export default {
 		hideDialog() {
 			this.profileDialog = false
 		}
+	},
+
+	created() {
+		// this.$store.dispatch('todos/INIT')
+		// this.$store.dispatch('todos/GET_TODOS')
 	}
 
 }
