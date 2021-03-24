@@ -25,7 +25,22 @@
 </template>
 
 <script>
+
+import Toolbar from 'primevue/toolbar/sfc';
+import Button from 'primevue/button/sfc';
+import Dialog from 'primevue/dialog/sfc';
+import InputText from 'primevue/inputtext/sfc';
+import Textarea from 'primevue/textarea/sfc';
+
 export default {
+
+	components: {
+		Toolbar,
+		Button,
+		Dialog,
+		InputText,
+		Textarea
+	},
 
 	data() {
 
